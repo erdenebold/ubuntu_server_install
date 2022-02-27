@@ -16,7 +16,7 @@ sudo dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb
 sudo cp /usr/local/bin/wkhtmltopdf /usr/bin
 sudo cp /usr/local/bin/wkhtmltoimage /usr/bin
 sudo apt-get install postgresql-13
-sudo su - postgres
+sudo su postgres
 createuser odoo -s;
 psql template1
 alter role odoo with password 'odoo';
