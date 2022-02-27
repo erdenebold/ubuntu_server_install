@@ -11,7 +11,7 @@ sudo npm install -g less less-plugin-clean-css
 sudo apt-get install -y node-less
 sudo wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb
 sudo dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb
-sudo apt install –f
+sudo apt-get install –f
 sudo dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb
 sudo cp /usr/local/bin/wkhtmltopdf /usr/bin
 sudo cp /usr/local/bin/wkhtmltoimage /usr/bin
