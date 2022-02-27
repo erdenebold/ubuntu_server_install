@@ -20,12 +20,8 @@ sudo wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo
 echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
 sudo apt-get update
 sudo apt-get install postgresql-13 postgresql-client-13
-sudo su postgres
-createuser odoo -s;
-psql template1
-alter role odoo with password 'odoo';
-\q
-exit
+sudo su - postgres -c "createuser -s odoo" 2> /dev/null || true
+
 sudo mkdir /var/log/odoo
 sudo chown odoo:root /var/log/odoo
 
